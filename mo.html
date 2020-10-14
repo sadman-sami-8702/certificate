@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="mo.css">
+    </head>
+    <body class="body">
+        <div class="headerr">
+            <div class="header">
+                <strong> MATH OLYMPIAD </strong>
+             </div>
+        </div>
+        <div class="rrr">
+            <h1>Search your Certificate by your name :</h1>
+        </div>
+
+        <input type="text" name="" id="myInput" placeholder="Serach your Certificate ..." class="myinputt" onkeyup="searchFun()">
+        
+        <table id="myTable">
+            <tr>
+              <th class="tableh"><strong>Download Your Certificate</strong></th>
+            </tr>
+            <tr>
+              <td class="content"><a href="#" download>  </a></td>
+            </tr>
+            
+                                      
+            
+
+          </table>
+
+<script>
+    const searchFun = () => {
+        let filter = document.getElementById('myInput').value.toUpperCase();
+
+        let myTable = document.getElementById('myTable');
+
+        let tr = myTable.getElementsByTagName('tr');
+
+        for(var i=0; i<tr.length ; i++){
+            let td = tr[i].getElementsByTagName('td')[0];
+
+            if(td){
+                let textvalue = td.textContent || td.innerHTML;
+
+                if(textvalue.toUpperCase().indexOf(filter) > -1){
+                    tr[i].style.display = "";  
+                }else{
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+        
+    }
+</script>
+    </body>
+</html>

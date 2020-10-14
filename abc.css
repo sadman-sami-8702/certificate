@@ -1,0 +1,123 @@
+@import url('https: //fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #040d15;
+}
+a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#eecda3 , #ef629f);
+    width: 70%;
+    text-align: center;
+}
+a:nth-child(2)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(3)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(4)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(5)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(6)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(7)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(8)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(9)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(10)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+a:nth-child(11)
+{
+    background: linear-gradient(90deg, #eecda3 , #ef629f);
+}
+span
+{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0.5;
+    }
+}
+
+.btn {
+    background: none;
+    font-size: 100%;
+}
+
+.textt {
+    background-color: #03adfc;
+    width: 100%;
+    
+}
+
+.abc {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 180% ;
+}
+
+.btttn {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 4px;
+}
+

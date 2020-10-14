@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Participation Certificate</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="abc.css">
+</head>
+<body>
+
+    <div class="textt">
+        <div class="abc">
+            <strong>Certificate of Participation</strong>
+        </div>
+    </div>
+    <div class="btttn">
+        <a href="mo.html"><button class="btn"><strong>Math Olympiad</strong></button></a>
+    <a href="mc.html"><button class="btn"><strong>Math IQ</strong></button></a>
+    <a href="cb.html"><button class="btn"><strong>Code Break</strong></button></a>
+    <a href="dp.html"><button class="btn"><strong>Digital Presentation</strong></button></a>
+    <a href="pp.html"><button class="btn"><strong>Probability Pressure</strong></button></a>
+    <a href="ma.html"><button class="btn"><strong>Mathematical Article</strong></button></a>
+    <a href="mac.html"><button class="btn"><strong>Math Camp</strong></button></a>
+    <a href="gi.html"><button class="btn"><strong>Google IT</strong></button></a>
+    <a href="hc.html"><button class="btn"><strong>Human Computer</strong></button></a>
+    <a href="so.html"><button class="btn"><strong>Statistics Olympiad</strong></button></a>
+    <a href="cab.html"><button class="btn"><strong>Calculus Bee</strong></button></a>
+
+    </div>
+    
+    <script type="text/javascript">
+       const buttons = document.querySelectorAll('a');
+       buttons.forEach(btn =>{
+           btn.addEventListener('click',function(e){
+               let x = e.clientX - e.target.offsetLeft;
+               let y = e.clientY - e.target.offsetTop;
+
+               let ripples = document.createElement('span');
+               ripples.style.left = x + 'px' ;
+               ripples.style.top = y + 'px';
+               this.appendChild(ripples);
+
+               setTimeout(()=>{
+                   ripples.remove()
+               },1000);
+           })
+       })
+    
+    </script>
+    
+    </div>
+</body>
+</html>
